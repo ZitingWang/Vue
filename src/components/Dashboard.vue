@@ -1,5 +1,4 @@
 <template>
-  <div class="hero">
   <div v-if="user">
     <h1>Hello USER!</h1>
     <img :src="user.photoURL" width="100"> <br>
@@ -7,7 +6,6 @@
     <p>{{user.email}}</p>
     <button @click="logOut">Log out</button>
     <br><br><br>
-  </div>
   </div>
 </template>
 
@@ -30,13 +28,6 @@ export default {
 </script>
 
 <style scoped>
-  .hero {
-    height: 100vh;
-    margin-top: 30px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
   img {
     border-radius: 50px;
   }

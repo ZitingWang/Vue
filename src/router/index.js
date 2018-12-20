@@ -26,8 +26,7 @@ var routes = [
   {
     path: '/Post',
     name: 'Post',
-    component: Post,
-    meta: { requireAuth: true }
+    component: Post
   },
   {
     path: '/map',
@@ -43,8 +42,7 @@ var routes = [
   {
     path: '/about',
     name: 'AboutUs',
-    component: AboutUs,
-    meta: { requireAuth: true }
+    component: AboutUs
   },
   {
     path: '/contact',
