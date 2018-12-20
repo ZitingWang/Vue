@@ -15,8 +15,10 @@
           <b-nav-item to="/about"><i class="fa fa-info" style="padding: 5px"> About Us</i></b-nav-item>
           <b-nav-item to="/contact"><i class="fa fa-comment" style="padding: 5px"> Contact Us</i></b-nav-item>
           <b-nav-item to="/login"><i class="fa fa-sign-in" style="padding: 5px"> Login </i></b-nav-item>
-          <b-nav-item><i class="fa fa-sign-out" style="padding: 5px"> Logout </i></b-nav-item>
-          <i class="fa fa-pied-piper-alt fa-1x" style="padding: 5px; color: white;"></i>
+          <b-nav-item to="/dashboard"><i class="fa fa-sign-out" style="padding: 5px"> Logout </i></b-nav-item>
+          <div v-if="user">
+            <img :src="user.photoURL" style="color: white; font-size: 10px; width: 40px;border-radius: 50px;">
+          </div>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -26,7 +28,12 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  computed: {
+    user () {
+      return this.$store.getters['user/user']
+    }
+  }
 }
 </script>
 
@@ -39,7 +46,7 @@ export default {
     color: #000000;
   // color: #2c3e50;
     padding-top: 20px;
-    background: url("./assets/56dab15c5c1d5.jpg") no-repeat center top;
+    background: url("./assets/snow.jpg") no-repeat center top;
   // background-size: cover;
   // background-color: #f6d54f
   }

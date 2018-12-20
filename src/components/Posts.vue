@@ -117,6 +117,13 @@ export default {
     width: 60%;
     margin: 0 auto;
   }
+  .hero {
+    height: 100vh;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .vue-title {
     margin-top: 30px;
     text-align: center;

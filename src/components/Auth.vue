@@ -18,4 +18,11 @@ export default {
 
 <style>
   @import "../../node_modules/firebaseui/dist/firebaseui.css";
+  .hero {
+    height: 100vh;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 </style>
